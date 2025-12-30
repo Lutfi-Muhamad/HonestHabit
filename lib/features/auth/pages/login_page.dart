@@ -8,8 +8,6 @@ class LoginPage extends StatelessWidget {
     final theme = Theme.of(context);
     final colors = theme.colorScheme;
 
-    debugPrint('Scaffold BG: ${theme.scaffoldBackgroundColor}');
-
     return Scaffold(
       body: SafeArea(
         child: Column(
@@ -36,8 +34,8 @@ class LoginPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: colors.surface,
                   borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
                   ),
                 ),
                 padding: const EdgeInsets.fromLTRB(24, 32, 24, 24),
@@ -159,7 +157,7 @@ class _DarkInput extends StatelessWidget {
       style: TextStyle(color: colors.onSurface),
       decoration: InputDecoration(
         filled: true,
-        fillColor: colors.surface, // BUKAN background
+        fillColor: colors.surface,
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
           vertical: 14,
